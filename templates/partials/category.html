@@ -1,0 +1,21 @@
+<ul class="categories">
+  <li>
+    <h1 class="cat-title"><strong>@title</strong></h1>
+    <ul class="category">
+      foreach $children do
+        <li class="seven columns">
+          <a href="@url" title="@client Project Page">
+            <div class="thumbnail">
+              <img src="@thumb" alt="@client" title="@client">
+            </div>
+            <div class="text">
+              <h2>@client</h2>
+              <p class="project-date"><em>@date</em></p>
+            </div>
+          </a>
+        </li>
+      endforeach
+    </ul>
+  </li>
+  <div class="clear"></div>
+</ul>

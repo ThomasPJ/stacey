@@ -1,0 +1,11 @@
+client: Club Med
+-
+date: 2014, Jul-
+-
+tags: Website Specifications, Market Research, UX Workshops
+-
+brief: In 2011, Club Med initiated a website overhaul. After having successfully redesigned their “Booking Engine” (conversion funnel), altima° was chosen in 2014 to rebuild the rest of Club Med’s website. I assisted a Senior Project Manager throughout my internship at altima°. My work consisted primarily in the following: 1) the writing of website specifications 2) market research and 3) preparation of UX workshops.
+-
+conclusion: Working for Club Med gave me the opportunity to understand how web agencies such as altima° work with big companies on daily and long-term bases. I learned that continuous communication and rigorous organization are key when working with multidisciplinary teams.
+- 
+description-seo: Working for Club Med gave me the opportunity to understand how web agencies such as altima° work with big companies on a daily basis.

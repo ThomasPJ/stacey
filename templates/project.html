@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>@name's Portfolio | @client</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="@description-seo" />
+		<meta name="author" content="@name" />
+		<link rel="stylesheet" href="@root_path/public/docs/css/screen.css" type="text/css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Signika:300,400' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" type="image/x-icon" href="@root_path/public/images/favicon.ico">
+		<link rel="canonical" href="http://thomaspetitjean.com/@permalink" />
+
+		<meta property="og:title" content="@name's Portfolio - @client"/>
+		<meta property="og:description" content="@description-seo" />
+		<meta property="og:type"   content="portfolio" />
+		<meta property="og:image" content="http://thomaspetitjean.com/public/images/thomas-petitjean.png"/>
+		<meta property="og:url" content="http://thomaspetitjean.com/@permalink"/>
+		<meta property="og:site_name" content="@name's Portfolio"/>
+	</head>
+	<body itemscope itemtype="http://schema.org/WebPage">
+		<div class="wrap">
+			<header class="animated fadeInDown">
+				<div class="container">
+					<div class="name-project six columns">
+						<a href="/" title="@name, Portfolio Homepage">
+							<img src="@root_path/public/images/thomas-petitjean.png" alt="@name, @profession" title="@name, @profession">
+							<div class="profile">
+								<span>@name<br><strong>Portfolio</strong></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</header>
+			<div class="main container">
+				<div itemscope itemtype="http://schema.org/CreativeWork" class="content-project sixteen columns">
+					<div  class="nine columns">
+						<div class="breadcrumbs-top">
+							:pages
+						</div>
+						:media
+					</div>
+					<div class="description six columns animated fadeIn @position">
+						<div class="inner-description">
+							<h1 class="client" itemprop="name">@client</h1>
+							<p class="date">@date</p>
+							<p class="tags" itemprop="keywords"><i class="fa fa-tags"></i> @tags</p>
+							<div class="brief">
+								<p>@brief</p>
+							</div>
+							<div class="conclusion">
+								<p>@conclusion</p>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="bottom-project">
+							<ul>
+								if $siblings do
+									:previous-page
+									:next-page
+								endif
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer-project">
+				<div class="container">
+					<div class="sixteen columns">
+						<div class="five columns">
+							<ul class="nav">
+								<li><a href="https://www.linkedin.com/in/petitjeanthomas" target="_blank" title="LinkedIn">LinkedIn</a></li>
+								<li><a href="https://twitter.com/_tpetitjean" target="_blank" title="Twitter">Twitter</a></li>
+								<li><a href="https://plus.google.com/102027116421132949042" target="_blank" title="Google +">Google +</a></li>
+							</ul>
+						</div>
+						<div class="signature four columns">
+							<p>@name - 2015</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T5DKCQ"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-T5DKCQ');</script>
+		<!-- End Google Tag Manager -->
+	</body>
+</html>

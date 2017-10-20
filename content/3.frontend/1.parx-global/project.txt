@@ -1,0 +1,11 @@
+client: Parx
+-
+date: 2013, Jun–
+-
+tags: HTML, CSS, JS
+-
+brief: Parx is the world leader in electronic parking payment. I was in charge of most of the website’s development.
+-
+conclusion: This “one-page” website comprises a contact form in the bottom section. I was in charge of configuring this form using JavaScript and “plug it” to the back office.
+- 
+description-seo: Parx is the world leader in electronic parking payment. I was in charge of most of the website’s development.

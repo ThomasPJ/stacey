@@ -1,0 +1,6 @@
+title: Frontend
+-
+header: Frontend
+-
+seo-meta: As a front end developer, I am proficient with HTML5, CSS3 as well as JS libraries and frameworks such as jQuery and Meteor.
+-

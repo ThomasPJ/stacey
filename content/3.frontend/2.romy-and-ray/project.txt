@@ -1,0 +1,11 @@
+client: Romy and Ray
+-
+date: 2013, Jul–
+-
+tags: HTML, CSS, JS
+-
+brief: Romy and Ray is a French clothing brand that designs high quality garments. I worked with a graphic designer to develop their website.
+-
+conclusion: The Romy and Ray website features many images and assets. This project allowed me to further my skills in image optimisation, CSS and JS, as well as taught me how to improve a website’s performance.
+- 
+description-seo: Romy and Ray is a French clothing brand that designs high quality garment. I worked with a graphic designer in order to develop the website.

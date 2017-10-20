@@ -1,0 +1,11 @@
+client: Aura Soma Boutique Redesign
+-
+date: 2014, Feb–
+-
+tags: Visual enhancements, Marketing Campaigns, Call-To-Action, Conversion Funnel
+-
+brief: Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate. I made ​​a number of visual enhancements both on product pages and on the conversion funnel.
+-
+conclusion: My client noticed a 30% increase in turnover over the first 3 months, compared with the turnover in year Y-1.
+- 
+description-seo: Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate.

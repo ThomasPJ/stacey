@@ -1,0 +1,19 @@
+<ul>
+	<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="/" title="@name, Portfolio Homepage" itemprop="url">
+			<span itemprop="title">Home</span>
+		</a> 
+		<span>></span>
+	</li>
+	foreach $parent do
+  	<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+  		<a href="@url" title="@title Page" itemprop="url">
+  			<span itemprop="title">@title</span>
+  		</a> 
+  		<span>></span>
+  	</li>
+	endforeach
+	<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<p itemprop="title">@client</p>
+	</li>
+</ul>

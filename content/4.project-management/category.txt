@@ -1,0 +1,6 @@
+title: Project Management
+-
+header: Project Management
+-
+seo-meta: As a project manager, I work with multidisciplinary teams that include: conversion consultants, UX consultants, designers, web developers and writers.
+-

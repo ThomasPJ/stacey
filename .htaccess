@@ -1,0 +1,88 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !/robots\.txt$ [nocase]
+RewriteRule \.txt$  -  [forbidden,last]
+
+# Some hosts require a rewritebase rule, if so, uncomment the RewriteBase line below. If you are running from a subdirectory, your rewritebase should match the name of the path to where stacey is stored.
+# ie. if in a folder named 'stacey', RewriteBase /stacey
+#RewriteBase /
+
+# Option 1: rewrite www.example.com → example.com
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteRule ^about(.*) /? [L,R=301]
+    RewriteRule ^seo/(.*) /sem/? [L,R=301]
+    RewriteRule ^(.*)/temper/$ /frontend/? [L,R=301]
+    RewriteRule ^(.*)/hospital/$ /frontend/? [L,R=301]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+# Rewrite any calls to *.html, *.json, *.xml, *.atom, *.rss, *.rdf or *.txt if a folder matching * exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !public/
+RewriteCond %{DOCUMENT_ROOT}/public/$1.$2 !-f
+RewriteRule (.+)\.(html|json|xml|atom|rss|rdf|txt)$ $1/ [L]
+
+# Add a trailing slash to directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.|\?)
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ([^/]+)$ $1/ [L]
+
+# Rewrite any calls to /render to the image parser
+RewriteCond %{REQUEST_URI} render/
+RewriteRule ^render/. app/parsers/slir/ [L]
+
+# Rewrite any calls to /* or /app to the index.php file
+RewriteCond %{REQUEST_URI} /app/$
+RewriteRule ^app/ index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ index.php?/$1/ [L,QSA]
+
+# Rewrite any file calls to the public directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule ^(.+)$ public/$1 [L]
+
+# ------------------------------------------------------------------------------
+# | File access                                                                |
+# ------------------------------------------------------------------------------
+
+# Block access to directories without a default document.
+# Usually you should leave this uncommented because you shouldn't allow anyone
+# to surf through every directory on your server (which may includes rather
+# private places like the CMS's directories).
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Block access to hidden files and directories.
+# This includes directories used by version control systems such as Git and SVN.
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Block access to backup and source files.
+# These files may be left by some text editors and can pose a great security
+# danger when anyone has access to them.
+
+<FilesMatch "(^#.*#|\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|sw[op])|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>

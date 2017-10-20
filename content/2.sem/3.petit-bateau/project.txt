@@ -1,0 +1,13 @@
+client: Petit Bateau
+-
+date: 2014, July-
+-
+tags: Meta tags, HTML Optimisation, Keyword Analysis, Content Optimisation, Web Performance, Structured Data
+-
+brief: Petit Bateau is a French clothing brand that was created in the early 20th century. The Petit Bateau website features many products and offers. As a result, editorial work needs to be carried out frequently to keep all product pages up to date and to maintain an optimal site indexation. Renewing product information regularly and working continuously on a site’s content has indeed proven to be very efficient in SEO. In order to accomplish this, I led the rewriting of all title tags and was involved in the meta description rewriting process.
+-
+conclusion: The re-writing work that was carried out allowed the site’s pages to be positioned higher in the search results on generic and long tail keywords. I also provided technical guidance to improve the website’s 1) performance (loading time, crawl errors) 2) indexing (sitemaps), and 3) structured data, to enhance data visualisation in search results. Finally, I conducted a mobile analysis to evaluate the site’s SEO performance on mobile and I outlined the next steps that Petit Bateau needed to pursue in order to improve the site’s ranking.
+- 
+description-seo: Petit Bateau is a French clothing brand created in the early 20th century. I led the rewriting of all title tags and was involved in the meta description rewriting process.
+-
+position: absolute

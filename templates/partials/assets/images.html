@@ -1,0 +1,11 @@
+<ul class="image-list">
+foreach $images do
+	<li>
+		<div class="divider"></div>
+		<img itemprop="image" src="@url" alt="@client" title="@client">
+		if @description do
+			<em>@description</em>
+		endif
+	</li>
+endforeach
+</ul>

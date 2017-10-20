@@ -1,0 +1,11 @@
+client: Marketing, Advertising and Design Society
+-
+date: 2013, Oct–
+-
+tags: HTML, CSS, JS, PHP, jQuery
+-
+brief: As CTO of Nottingham University’s Marketing, Advertising and Design Society, I was in charge of designing and developing the society’s website. The website’s main purpose was to facilitate communication between us, committee members, and the members of our society. It also explained the nature of our society and displayed our event dates.
+-
+conclusion: The society’s website became our main communication channel along with social media.
+- 
+description-seo: As CTO of Nottingham University’s Marketing, Advertising and Design Society, I was in charge of designing and developing the society’s website.
